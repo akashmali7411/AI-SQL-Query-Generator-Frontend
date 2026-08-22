@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background: #111827;
+  color: white;
+  padding: 35px 70px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header p {
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+/* Main */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+/* Card */
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 32px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title-row h2 {
+  margin: 0;
+  color: #1f2937;
+}
+
+/* Badge */
+
+.badge {
+  background: #e0f2fe;
+  color: #0284c7;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Labels */
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Select */
+
+select {
+  width: 100%;
+  padding: 15px;
+  font-size: 17px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+}
+
+/* Textarea */
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 15px;
+
+  font-size: 16px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  resize: vertical;
+}
+
+.schema-input {
+  min-height: 150px;
+  font-family: Consolas, monospace;
+}
+
+/* Generate Button */
+
+button {
+  width: 100%;
+  margin-top: 25px;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Copy button */
+
+.copy-button {
+  width: auto;
+  margin: 0;
+
+  padding: 10px 20px;
+
+  background: #e5e7eb;
+  color: #111827;
+
+  font-size: 16px;
+}
+
+.copy-button:hover {
+  background: #d1d5db;
+}
+
+/* SQL */
+
+.sql-output {
+  background: #111827;
+  color: #e5e7eb;
+
+  min-height: 450px;
+
+  padding: 25px;
+
+  border-radius: 10px;
+
+  font-family: Consolas, monospace;
+  font-size: 16px;
+
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 30px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+}
